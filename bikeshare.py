@@ -13,7 +13,7 @@ def get_filters():
     
     c = ['chicago','new york','washington']
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    while(True):
+    while(1):
         city = str(input('Would you like to see data for Chicago, New York, or Washington?\n')).lower()
         if(city not in c):
             print('Entered invalid input, please try again')
@@ -23,7 +23,7 @@ def get_filters():
     # TO DO: get user input for month (all, january, february, ... , june)
     months = ['all','january', 'february', 'march', 'april', 'may', 'june','august', 'september', 'october', 'november', 'december']
     
-    while(True):
+    while(1):
         month = str(input('Would you like to filter the data by month or not at all?  input for month (all, january, february, ... )\n')).lower()
         if(month not in months):
             print('Entered invalid input, please try again') 
